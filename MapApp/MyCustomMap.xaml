@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapApp.MyCustomMap"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <maps:Map x:Name="myCustomMap" VerticalOptions="FillAndExpand">
+                
+            </maps:Map>
+            <StackLayout>
+                <Entry x:Name="txtEntry" Placeholder="Ingrese direccion" HorizontalOptions="FillAndExpand"></Entry>
+                <Button x:Name="btn" Text="Search" Clicked="btn_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
